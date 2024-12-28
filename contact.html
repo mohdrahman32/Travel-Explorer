@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ExploreWorld</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+    <style>
+        :root {
+            --primary: #EE4266;
+            --secondary: #2A1E5C;
+            --background: #0A0F0D;
+            --light: #C4CBCA;
+            --accent: #3CBBB1;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background);
+            color: var(--light);
+        }
+
+        .btn {
+            background-color: var(--primary);
+            color: var(--light);
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+        }
+
+        .icon {
+            font-size: 3rem;
+            color: var(--accent);
+            transition: transform 0.3s;
+        }
+
+        .icon:hover {
+            transform: scale(1.2);
+        }
+
+        .highlight-text {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .social-icons a {
+            font-size: 2rem;
+            color: var(--accent);
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: var(--primary);
+        }
+
+        h1, h2, h3 {
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+<nav class="bg-black text-white p-5 shadow-lg" data-aos="fade-down" data-aos-duration="1000">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="index.html" class="text-3xl font-bold" data-aos="fade-right" data-aos-duration="1000"><span style="color: #EE4266;">Travel</span> Explorer</a>
+        <ul class="hidden md:flex space-x-6" data-aos="fade-left" data-aos-duration="1000">
+            <li><a href="index.html" class="hover:text-yellow-500">Home</a></li>
+            <li><a href="destinations.html" class="hover:text-yellow-500">Destinations</a></li>
+            <li><a href="about.html" class="hover:text-yellow-500">About</a></li>
+            <li><a href="contact.html" class="hover:text-yellow-500">Contact</a></li>
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden" data-aos="fade-left" data-aos-duration="1000">
+            <button id="mobile-menu-btn" class="text-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-black text-white p-4 space-y-4" data-aos="fade-up" data-aos-duration="1000">
+        <ul>
+            <li><a href="index.html" class="block hover:text-yellow-500">Home</a></li>
+            <li><a href="destinations.html" class="block hover:text-yellow-500">Destinations</a></li>
+            <li><a href="about.html" class="block hover:text-yellow-500">About</a></li>
+            <li><a href="contact.html" class="block hover:text-yellow-500">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<script>
+    // Toggle mobile menu
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
+
+
+    <!-- Hero Section -->
+    <section id="contact-hero" class="bg-secondary text-light py-16" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-4xl font-bold mb-6 animate__animated animate__fadeIn">Get in Touch with Us</h2>
+            <p class="text-lg mb-4">Have questions or want to start your next adventure? We're here to help you make your travel dreams a reality!</p>
+        </div>
+    </section>
+
+    <!-- Contact Details Section -->
+    <section id="contact-details" class="py-16" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold text-accent mb-8">Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" class="icon" data-aos="zoom-in" data-aos-duration="1000"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" class="icon" data-aos="zoom-in" data-aos-duration="1000"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" class="icon" data-aos="zoom-in" data-aos-duration="1000"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank" class="icon" data-aos="zoom-in" data-aos-duration="1000"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="text-lg mt-6">Stay connected for travel updates, tips, and inspiration!</p>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section id="contact-info" class="bg-accent text-light py-16" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold mb-8">Contact Information</h3>
+            <div class="space-y-4">
+                <p class="text-lg">
+                    <i class="fas fa-envelope icon"></i>
+                    <a href="mailto:contact@exploreworld.com" class="text-light hover:text-primary">contact@exploreworld.com</a>
+                </p>
+                <p class="text-lg">
+                    <i class="fas fa-phone-alt icon"></i>
+                    <a href="tel:+1234567890" class="text-light hover:text-primary">+1 (234) 567-890</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="bg-accent text-light py-16" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-8">Send Us a Message</h3>
+            <form class="max-w-lg mx-auto space-y-6" data-aos="fade-up" data-aos-duration="1000">
+                <input type="text" class="w-full p-4 rounded bg-light text-secondary" placeholder="Your Name" required>
+                <input type="email" class="w-full p-4 rounded bg-light text-secondary" placeholder="Your Email" required>
+                <textarea class="w-full p-4 rounded bg-light text-secondary" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn w-full">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-secondary text-light py-4 text-center" data-aos="fade-up" data-aos-duration="1000">
+        <p>&copy; 2024 ExploreWorld. All rights reserved.</p>
+    </footer>
+
+    <script>
+        AOS.init();
+
+        // GSAP animations for page elements
+        gsap.from(".btn", { opacity: 0, y: 20, stagger: 0.3, duration: 1, ease: "power4.out" });
+        gsap.from(".icon", { opacity: 0, scale: 0.5, stagger: 0.3, duration: 1, ease: "power4.out" });
+        gsap.from("h1, h2, h3", { opacity: 0, x: -100, stagger: 0.3, duration: 1, ease: "power4.out" });
+    </script>
+</body>
+</html>

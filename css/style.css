@@ -1,0 +1,485 @@
+/* Custom CSS for the Travel Explorer webpage */
+
+/* Set the background color and text color */
+body {
+    background-color: #F2F8FB; /* Light Misty Blue */
+    color: #333333; /* Dark Charcoal */
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Hero Section Styling */
+  #hero {
+    position: relative;
+    background-color: #0099CC; /* Bright Ocean Blue */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F2F8FB;
+    text-align: center;
+    padding: 2rem;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  #hero h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #F2F8FB;
+  }
+  
+  #hero p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #F2F8FB;
+  }
+  
+  /* Explore More Button Styling */
+  #explore-more {
+    position: absolute;
+    left: 45%;
+    bottom: 19rem; /* Adjust the distance from the bottom of the screen */
+    background-color: #FF6600; /* Sunset Orange */
+    color: #F2F8FB; /* Light Misty Blue */
+    padding: 1rem 2.5rem;
+    font-size: 1.4rem;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #explore-more:hover {
+    background-color: #FF8533; /* Lighter Sunset Orange */
+    transform: scale(1.1);
+  }
+  
+  #explore-more:focus {
+    outline: none;
+  }
+  
+  /* Features Section */
+  #features {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+  }
+  
+  #features h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0099CC; /* Bright Ocean Blue */
+    margin-bottom: 2rem;
+  }
+  
+  /* Feature Items */
+  .feature-item {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .feature-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .feature-item h3 {
+    color: #0099CC; /* Bright Ocean Blue */
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-item p {
+    color: #666666;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Testimonials Section */
+  #testimonials {
+    background-color: #666666; /* Light Misty Blue */
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  
+  .swiper-slide {
+    background-color: #fffafa9d;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .swiper-slide p {
+    font-style: italic;
+    color: #666666;
+    margin-bottom: 1rem;
+  }
+  
+  .swiper-slide h4 {
+    font-weight: 600;
+    color: #333333;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #333333; /* Dark Charcoal */
+    color: #FFFFFF;
+    padding: 2rem 0;
+  }
+  
+  footer p {
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #hero h1 {
+      font-size: 3rem;
+    }
+  
+    #hero p {
+      font-size: 1rem;
+    }
+  
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .swiper-slide {
+      padding: 2rem;
+    }
+  
+    #explore-more {
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      bottom: 1rem; /* Adjust the distance for mobile screens */
+    }
+  }
+  
+  /* Additional Animation & Hover Effects */
+  .animate__animated {
+    animation-duration: 1s;
+  }
+  
+  button:hover {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #FF6600; /* Sunset Orange */
+  }
+
+/* Custom CSS for the Travel Explorer - Destinations Page */
+
+/* Set the background color and text color */
+body {
+    background-color: #202020; /* Dark Slate */
+    color: #F4F4F4; /* Off-White */
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    background-color: #1C1C1C; /* Dark Charcoal */
+  }
+  
+  nav a {
+    color: #F4F4F4; /* Off-White */
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #F7C21A; /* Electric Yellow */
+  }
+  
+  /* Hero Section Styling */
+  #hero {
+    background-color: #202020; /* Dark Slate */
+    color: #F4F4F4; /* Off-White */
+    padding: 20rem 0;
+  }
+  
+  #hero h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+  }
+  
+  #hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  #hero a {
+    background-color: #F76C6C; /* Vibrant Coral */
+    color: #F4F4F4; /* Off-White */
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+  }
+  
+  #hero a:hover {
+    background-color: #F7C21A; /* Electric Yellow */
+  }
+  
+  /* Destinations Section */
+  #destinations {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: #202020; /* Dark Slate */
+  }
+  
+  #destinations h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #F4F4F4; /* Off-White */
+    margin-bottom: 2rem;
+  }
+  
+  .destination-card {
+    background-color: #F76C6C; /* Vibrant Coral */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .destination-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .destination-card img {
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .destination-card h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #F4F4F4; /* Off-White */
+  }
+  
+  .destination-card p {
+    font-size: 1.1rem;
+    color: #F4F4F4; /* Off-White */
+    margin-bottom: 1.5rem;
+  }
+  
+  .destination-card a {
+    background-color: #F7C21A; /* Electric Yellow */
+    color: #202020; /* Dark Slate */
+    padding: 0.8rem 2.5rem;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+  
+  .destination-card a:hover {
+    background-color: #F76C6C; /* Vibrant Coral */
+    color: #F4F4F4; /* Off-White */
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1C1C1C; /* Dark Charcoal */
+    color: #F4F4F4; /* Off-White */
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    #hero p {
+      font-size: 1rem;
+    }
+  
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .destination-card {
+      padding: 1.5rem;
+    }
+  }
+
+/* Custom CSS for the Travel Explorer - Mount Everest Page */
+
+/* Set the background color and text color */
+body {
+    background-color: #212121; /* Charcoal Black */
+    color: #FFFFFF; /* Pure White */
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    background-color: #1D3557; /* Deep Blue */
+  }
+  
+  nav a {
+    color: #F1FAEE; /* Snow White */
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #E63946; /* Mountain Red */
+  }
+  
+  /* Hero Section Styling */
+  #hero {
+    background-color: #212121; /* Charcoal Black */
+    color: #F1FAEE; /* Snow White */
+    padding: 20rem 0;
+  }
+  
+  #hero h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+  }
+  
+  #hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  #hero a {
+    background-color: #E63946; /* Mountain Red */
+    color: #F1FAEE; /* Snow White */
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+  }
+  
+  #hero a:hover {
+    background-color: #F1FAEE; /* Snow White */
+    color: #212121; /* Charcoal Black */
+  }
+  
+  /* Details Section */
+  #details {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: #212121; /* Charcoal Black */
+  }
+  
+  #details h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #F1FAEE; /* Snow White */
+    margin-bottom: 2rem;
+  }
+  
+  #details p {
+    font-size: 1.1rem;
+    color: #F1FAEE; /* Snow White */
+    margin-bottom: 2rem;
+  }
+  
+  #details .p-6 {
+    background-color: #1D3557; /* Deep Blue */
+  }
+  
+  #details .bg-[#E63946] {
+    background-color: #E63946; /* Mountain Red */
+  }
+  
+  #details .bg-[#1D3557] {
+    background-color: #1D3557; /* Deep Blue */
+  }
+  
+  #details h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #F1FAEE; /* Snow White */
+  }
+  
+  /* Adventure Preparation Section */
+  #preparation {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: #212121; /* Charcoal Black */
+  }
+  
+  #preparation h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #F1FAEE; /* Snow White */
+    margin-bottom: 2rem;
+  }
+  
+  #preparation .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  #preparation .p-6 {
+    background-color: #1D3557; /* Deep Blue */
+  }
+  
+  #preparation .bg-[#E63946] {
+    background-color: #E63946; /* Mountain Red */
+  }
+  
+  #preparation .bg-[#1D3557] {
+    background-color: #1D3557; /* Deep Blue */
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1D3557; /* Deep Blue */
+    color: #F1FAEE; /* Snow White */
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    #hero p {
+      font-size: 1rem;
+    }
+  
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

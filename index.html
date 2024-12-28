@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore breathtaking travel destinations worldwide with Travel Explorer.">
+  <meta name="keywords" content="Travel, Destinations, Explore, Vacations, Adventure">
+  <meta name="author" content="Your Name">
+  <title>Travel Explorer</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <!-- AOS (Animate on Scroll) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <!-- Swiper.js -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</head>
+<body class="bg-[#F2F8FB] text-[#333333] font-raleway overflow-x-hidden">
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative h-screen flex flex-col justify-center items-center bg-cover bg-center" style="background-image: url('assets/hero.avif');">
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <div class="text-center z-10">
+      <h1 class="text-5xl font-extrabold text-[#F2F8FB] animate__animated animate__fadeInDown">Discover Your Next Adventure</h1>
+      <p class="text-lg text-[#F2F8FB] mt-4 animate__animated animate__fadeInUp animate__delay-1s">
+        Explore the world’s most breathtaking travel destinations.
+      </p>
+      <a href="destinations.html" class="mt-8 px-6 py-3 bg-[#0099CC] text-white font-semibold rounded-full hover:bg-[#0077A8] transition transform hover:scale-105 animate__animated animate__fadeInUp animate__delay-2s" id="explore-more" class="animate__animated animate__fadeIn">
+        Explore Now
+      </a>
+    </div>
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-16 px-6">
+    <h2 class="text-4xl font-bold text-center text-[#0099CC] mb-12">Why Choose Us?</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div data-aos="fade-up" class="text-center">
+        <i class="fas fa-plane-departure text-5xl text-[#FF6600] mb-4"></i>
+        <h3 class="text-xl font-bold">Worldwide Destinations</h3>
+        <p class="mt-2">Discover exotic destinations across the globe.</p>
+      </div>
+      <div data-aos="fade-up" class="text-center">
+        <i class="fas fa-map-marked-alt text-5xl text-[#66CC99] mb-4"></i>
+        <h3 class="text-xl font-bold">Customized Itineraries</h3>
+        <p class="mt-2">Get personalized travel plans tailored to your preferences.</p>
+      </div>
+      <div data-aos="fade-up" class="text-center">
+        <i class="fas fa-wallet text-5xl text-[#FF6600] mb-4"></i>
+        <h3 class="text-xl font-bold">Affordable Pricing</h3>
+        <p class="mt-2">Travel without breaking the bank.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="bg-[#F2F8FB] py-16 px-6">
+    <h2 class="text-4xl font-bold text-center text-[#FF6600] mb-12">What Our Travelers Say</h2>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!-- Testimonial Slide 1 -->
+        <div class="swiper-slide text-center">
+          <p class="italic">"Travel Explorer made my trip unforgettable!"</p>
+          <h4 class="mt-4 font-bold">- John Doe</h4>
+        </div>
+        <!-- Testimonial Slide 2 -->
+        <div class="swiper-slide text-center">
+          <p class="italic">"The best travel service I have ever experienced."</p>
+          <h4 class="mt-4 font-bold">- Sarah Smith</h4>
+        </div>
+        <!-- Testimonial Slide 3 -->
+        <div class="swiper-slide text-center">
+          <p class="italic">"Highly recommend Travel Explorer for your adventures."</p>
+          <h4 class="mt-4 font-bold">- Emily Johnson</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#333333] text-white py-6 text-center">
+    <p>&copy; 2024 Travel Explorer. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init();
+
+    // Initialize Swiper
+    const swiper = new Swiper('.swiper-container', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+
+    // Initialize Particles.js
+    particlesJS.load('particles-js', 'assets/particles.json', function() {
+      console.log('Particles.js config loaded');
+    });
+  </script>
+</body>
+</html>

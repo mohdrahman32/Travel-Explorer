@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Travel Explorer</title>
+    <!-- Link to Tailwind CSS (use CDN for quick setup) -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Link to Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Link to custom style.css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+<nav class="bg-black text-white p-5 shadow-lg" data-aos="fade-down" data-aos-duration="1000">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="index.html" class="text-3xl font-bold" data-aos="fade-right" data-aos-duration="1000">Travel Explorer</a>
+        <ul class="hidden md:flex space-x-6" data-aos="fade-left" data-aos-duration="1000">
+            <li><a href="index.html" class="hover:text-yellow-500">Home</a></li>
+            <li><a href="destinations.html" class="hover:text-yellow-500">Destinations</a></li>
+            <li><a href="about.html" class="hover:text-yellow-500">About</a></li>
+            <li><a href="contact.html" class="hover:text-yellow-500">Contact</a></li>
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden" data-aos="fade-left" data-aos-duration="1000">
+            <button id="mobile-menu-btn" class="text-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-black text-white p-4 space-y-4" data-aos="fade-up" data-aos-duration="1000">
+        <ul>
+            <li><a href="index.html" class="block hover:text-yellow-500">Home</a></li>
+            <li><a href="destinations.html" class="block hover:text-yellow-500">Destinations</a></li>
+            <li><a href="about.html" class="block hover:text-yellow-500">About</a></li>
+            <li><a href="contact.html" class="block hover:text-yellow-500">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<script>
+    // Toggle mobile menu
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
+
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative bg-cover bg-center text-[#F4F4F4] min-h-screen flex justify-center items-center text-center py-20 px-5" style="background-image: url('assets/des-hero.jpg');" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container mx-auto animate__animated animate__fadeIn">
+            <h1 class="text-5xl font-extrabold mb-4 animate__animated animate__fadeIn">Explore Top Adventure Destinations</h1>
+            <p class="text-xl mb-6 animate__animated animate__fadeIn">Get ready to uncover the most exhilarating travel spots around the world.</p>
+            <a href="#destinations" class="bg-[#F76C6C] text-[#F4F4F4] px-6 py-3 rounded-full text-xl hover:bg-[#F7C21A] transition duration-300" data-aos="zoom-in" data-aos-duration="1000">Discover More</a>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="py-16 bg-[#202020] text-[#F4F4F4]" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8 animate__animated animate__fadeIn">Our Featured Destinations</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Destination 1 -->
+                <div class="destination-card bg-[#F76C6C] p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300" data-aos="flip-up" data-aos-duration="1000">
+                    <img src="assets/mount.avif" alt="Destination 1" class="w-full h-56 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Mount Everest</h3>
+                    <p class="mb-4">Experience the thrill of conquering the highest peak in the world.</p>
+                    <a href="mount.html" class="bg-[#F7C21A] text-[#202020] py-2 px-4 rounded-full hover:bg-[#F76C6C] transition duration-300" data-aos="zoom-in" data-aos-duration="1000">Explore</a>
+                </div>
+
+                <!-- Destination 2 -->
+                <div class="destination-card bg-[#F76C6C] p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300" data-aos="flip-up" data-aos-duration="1000">
+                    <img src="assets/grand.avif" alt="Destination 2" class="w-full h-56 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Grand Canyon</h3>
+                    <p class="mb-4">A natural wonder that leaves visitors in awe with its vast landscapes.</p>
+                    <a href="grand.html" class="bg-[#F7C21A] text-[#202020] py-2 px-4 rounded-full hover:bg-[#F76C6C] transition duration-300" data-aos="zoom-in" data-aos-duration="1000">Explore</a>
+                </div>
+
+                <!-- Destination 3 -->
+                <div class="destination-card bg-[#F76C6C] p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300" data-aos="flip-up" data-aos-duration="1000">
+                    <img src="assets/amazon.avif" alt="Destination 3" class="w-full h-56 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Amazon Rainforest</h3>
+                    <p class="mb-4">Dive into the heart of nature’s most diverse and exciting ecosystem.</p>
+                    <a href="amazon.html" class="bg-[#F7C21A] text-[#202020] py-2 px-4 rounded-full hover:bg-[#F76C6C] transition duration-300" data-aos="zoom-in" data-aos-duration="1000">Explore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1C1C1C] text-[#F4F4F4] py-4" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Travel Explorer. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Include AOS library -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init();
+    </script>
+
+</body>
+</html>
